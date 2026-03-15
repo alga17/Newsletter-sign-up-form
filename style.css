@@ -1,0 +1,163 @@
+:root {
+    --Red: hsl(4, 100%, 67%);
+    --Blue-800: hsl(234, 29%, 20%);
+    --Blue-700: hsl(235, 18%, 26%);
+    --Grey: hsl(0, 0%,58%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    background-color: var(--Blue-700);
+}
+
+.card {
+    display: flex;
+    width: 925px;
+    height: 640px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.text {
+    padding: 100px 35px 0 65px;
+    width: 475px;
+    color: var(--Blue-700);
+    font-weight: 500;
+}
+
+.card > img {
+    padding: 20px;
+}
+
+.big-text {
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--Blue-800);
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list-element {
+    display: flex;
+    gap: 15px;
+}
+
+.email-block {
+    margin-top: 40px;
+}
+
+.email {
+    width: 330px;
+    height: 50px;
+    padding-left: 20px;
+    border: 1px solid var(--Grey);
+    border-radius: 5px;
+    opacity: 0.8;
+    margin: 10px 0 20px 0;
+}
+
+.email::placeholder {
+    color: var(--Grey);
+    font-size: 15px;
+}
+
+.email.invalid {
+    border: 2px solid var(--Red);
+    background-color: hsla(4, 100%, 67%, 0.2);
+}
+
+.email.invalid::placeholder {
+    color: var(--Red);
+}
+
+input {
+    font-size: 15px;
+}
+
+
+.button {
+    color: white;
+    padding: 18px 68px;
+    border: none;
+    background-color: var(--Blue-800);
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+
+.button:hover {
+    background-color: var(--Red);
+}
+
+.thanks {
+    display: none;
+    flex-direction: column;
+    width: 380px;
+    height: 440px;
+    border-radius: 30px;
+    background-color: var(--White);
+    padding: 40px 60px;
+    font-size: 18px;
+}
+
+.text-valid {
+    color: red;
+    font-weight: 600;
+    display: none;
+}
+
+.text-valid.active {
+    display: block;
+    
+}
+
+
+.thanks.active {
+    display: flex;
+}
+
+.card.none {
+    display: none;
+}
+
+.thanks > img {
+    width: 60px;
+}
+
+.big-text-thanks {
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--Blue-800);
+    margin-top: 40px;
+}
+
+.small-text-thanks {
+    margin: 25px 0 25px 0;
+}
+
+.button-dismiss {
+    margin: 0;
+    padding: 20px 120px;
+}
+
+.valid {
+    display: flex;
+    gap: 100px;
+}
+
